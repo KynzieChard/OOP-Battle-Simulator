@@ -7,6 +7,7 @@ class Hero:
         self.name = name
         self.health = 150
         self.attack_power = 15
+        self.role = "mage" 
 
     def attack(self):
         return random.randint(0, self.attack_power)

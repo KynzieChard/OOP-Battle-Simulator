@@ -21,7 +21,7 @@ def main():
 
     Dannel = Hero("Dannel")
 
-    print(f"{Dannel.name} is summoned into the arean with {Dannel.health} health")
+    print(f"{Dannel.name} the hero {Dannel.role} is summoned into the arean with {Dannel.health} health")
 
     heroDamage = Dannel.attack()
 
