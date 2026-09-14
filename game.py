@@ -17,13 +17,13 @@ def main():
 
     goblin2 = Goblin("Barry")
     print(f"{goblin2.name} enters the arena with {goblin2.health} health.")
-    print("But no hero has answered the call... yet.")
 
-    Dom =  Hero("Dom")
 
-    print(f"{hero.name} is summoned into the arean with {hero.health} health")
+    Dannel = Hero("Dannel")
 
-    heroDamage = hero.attack
+    print(f"{Dannel.name} is summoned into the arean with {Dannel.health} health")
+
+    heroDamage = Dannel.attack()
 
     goblin.take_damage(heroDamage)
 
