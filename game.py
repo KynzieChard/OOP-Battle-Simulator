@@ -3,6 +3,19 @@ from hero import Hero
 
 ARENA_NAME = "The Iron Dome"
 
+def battle(hero:Hero, enemy:Goblin):
+    while hero.is_alive() and enemy.is_alive():
+        heroDamage = hero.attack()
+        enemy.take_damage(heroDamage)
+        if enemy.is_alive:
+            enemyDamage = enemy.attack()
+            hero.take_damage(enemyDamage)
+
+        if hero.is_alive():
+            print(f"{hero.name} wins!")
+        else:
+            print(f"{enemy.name} wins!")
+
 
 def main():
     """Open the arena and introduce its first opponent."""
@@ -29,3 +42,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    battle("Dannel","goblin")
