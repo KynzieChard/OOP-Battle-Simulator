@@ -11,10 +11,10 @@ def battle(hero:Hero, enemy:Goblin):
             enemyDamage = enemy.attack()
             hero.take_damage(enemyDamage)
 
-        if hero.is_alive():
-            print(f"{hero.name} wins!")
-        else:
-            print(f"{enemy.name} wins!")
+    if hero.is_alive():
+        print(f"{hero.name} wins!")
+    else:
+        print(f"{enemy.name} wins!")
 
 
 def main():
@@ -40,4 +40,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    battle("Dannel","goblin")
