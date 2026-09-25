@@ -38,8 +38,8 @@ def main():
     print(f"{Dannel.name} the hero {Dannel.role} is summoned into the arean with {Dannel.health} health")
 
     battle(Dannel,goblin)
-    bossGuy = Boss("Phill")
-    battle()
+    Phill = Boss("Phill")
+    battle(Dannel,Phill)
 
 
 if __name__ == "__main__":
