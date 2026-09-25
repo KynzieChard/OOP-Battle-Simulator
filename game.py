@@ -1,5 +1,6 @@
 from goblin import Goblin
 from hero import Hero
+from boss import Boss
 
 ARENA_NAME = "The Iron Dome"
 
@@ -37,6 +38,9 @@ def main():
     print(f"{Dannel.name} the hero {Dannel.role} is summoned into the arean with {Dannel.health} health")
 
     battle(Dannel,goblin)
+    bossGuy = Boss("Phill")
+    battle()
+
 
 if __name__ == "__main__":
     main()
